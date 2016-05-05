@@ -112,7 +112,7 @@
 
   ```
   <body>
-  <div #absContainer>
+  <div id="absContainer">
     <p id ="abs"></p>
   </div>
   </body>
@@ -189,7 +189,7 @@
 
 25.	If you want to center text within a block vertically, what attribute do you need to set? `padding`
 
-26.	How much total width will the div block below take up? *244px*
+26.	How much total width will the div block below take up? *234px*
 
   ```
   body {
