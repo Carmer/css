@@ -114,9 +114,8 @@ f
 
   ```
   <body>
-  <div #absContainer>
-    <p id ="abs">
-    <p>
+  <div id ="absContainer">
+    <p id ="abs"></p>
   </div>
   </body>
   ```
