@@ -18,7 +18,7 @@
 
 2. What is the term for the other elements?
 
-3.  Which of the following can be applied to an inline element?
+3.  If the following four attributes were applied to an inline element, which (if any) would have an effect?
   ```
   position: relative;
   background-color: red;
@@ -92,25 +92,33 @@
   * what color is the third p element?
 
 8. If you have the following, what's the practical result of giving the p and ul elements a position of `float: left` and `width: 200px`?
-f
+
+  ```
+  <div>
+    <p></p>
+    <ul>
+    </ul>
+  </div>
+  ```
+
   *  what would happen if you didn't specify the width of the p and ul elements?
 
   * what would it look like if the total screen width was 300px?
 
-  * if you had a background color on the div element, would the background color show up around the full height of it's child elements?  Why or why not?  If not, how can you address this?
+  * if you had a background color on the div element, would the background color show up around the full height of its child elements?  Why or why not?  If not, how can you address this?
 
 9.  What display type is demonstrated in each of the following:
   ![image}](/images/display_quiz.png)
 
-10. When you specify `position: relative` - the element will be positioned relative to what?  Does it remain in the normal flow?  
+10. When you specify `position: absolute` - the absolutely positioned element will be positioned relative to what?  Does it remain in the normal flow?  
 
-11. What else do you need to specify for a relative position to have any effect?
+11. What else needs to be specified for a relative position to have any effect?
 
-12. What position would you use if you wanted to have a sidebar element showing no matter where the user is currently position on the page?
+12. What position would you use if you wanted to have a sidebar element showing no matter where the user is currently positioned on the page?
 
-12. Will an absolute positioned element always be visible to the user, no matter where the user is on the page?  
+13. Will an absolute positioned element always be visible to the user, no matter where the user is on the page?  
 
-13.  Given the following, what element will the p position be absolutely positioned relative to?  What does this look like?  
+14.  Given the following, what element will the p element be absolutely positioned relative to?  What does this look like?  
 
   ```
   <body>
@@ -131,11 +139,11 @@ f
     top: 100px
   }
   ```
-14.  Would anything change  above if the div element was not given a position?  
+15.  Would anything change  above if the div element was not given a position?  
 
-15. Give an example of a situation where you may want to give something an absolute position.  Why is it necessary?  Do the same for relative and float.
+16. Give an example of a situation where you may want to give something an absolute position.  Why is it necessary?  Do the same for relative and float.
 
-16.  Which of the following takes the element out of normal flow?
+17.  Which of the following takes the element out of normal flow?
   ```
   position: static
   position: relative
@@ -143,19 +151,19 @@ f
   position: float
   ```
 
-17.  If you float the ul element left in the example below, what element will it float next to (assume available width).  Why?
+18.  If you float the ul element left in the example below, what element will it float next to (assume available width).  Why?
   ```
   <body>
     <div>
-      <p>
+      <p></p>
       <ul>
         <li></li>
-        <li><li>
+        <li></li>
       </ul>
     </div>
   </body>
   ```
-18.  Where would the ul element be positioned if there was not available width?
+19.  Where would the ul element be positioned if there was not available width?
 
 20.  If you didn't give the p and ul elements a width, what would happen if you gave the ul element a floated position? Why?
 
@@ -194,7 +202,7 @@ f
 26.	How much total width will the div block below take up?
 
   ```
-  body {
+  div {
     width: 200px;
     border-weight: 2px;
     padding: 10px;

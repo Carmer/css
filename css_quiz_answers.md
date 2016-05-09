@@ -4,7 +4,15 @@
 
 2. What is the term for the other elements? `inline`
 
-3.  Which of the following can be applied to an inline element? 'display: block`
+3.  If the following four attributes were applied to an inline element, which (if any) would have an effect?
+  ```
+  background-color: red
+  display: block
+  ```
+
+  The position attribute would not have an effect because there is no offset attribute to tell it where to move relative to its normal flow.  
+
+  And, unlike block elements, inline elements do not have height or width.  
 
 4. Given the following example:
 
@@ -100,7 +108,7 @@
 9.  What display type is demonstrated in each of the following:
   ![image}](images/display_ans.png)
 
-10. When you specify `position: absolute` - the element will be positioned relative to what?  *The next parent element that is also "positioned".  If none, it defaults up to the `html' element* Does it remain in the normal flow?  *No*
+10. When you specify `position: absolute` - the absolutely positioned element will be positioned relative to what? *The next parent element that is also "positioned".  If none, it defaults up to the `html' element* Does it remain in the normal flow?  *No*
 
 11. What else needs to be specified for a relative position to have any effect? *An offset property like `top`, `bottom`, `left` or `right`*
 
@@ -145,17 +153,17 @@
   ```
   <body>
     <div>
-      <p>
+      <p></p>
       <ul>
         <li></li>
-        <li><li>
+        <li></li>
       </ul>
     </div>
   </body>
   ```
 19.  Where would the ul element be positioned if there was not available width? *below the p element*
 
-20.  If you didn't give the p and ul elements a width, what would happen if you gave the ul element a floated position? Why? *Nothing, because the p element would take up the full width of the browser window*
+20.  If you didn't give the p and ul elements a width, what would happen if you gave the ul element a floated position? Why? *Nothing, because the p element, as a block element, would take up the full width of the browser window*
 
 21.  Given the following, what is the font size of the li element? *12px*
 
@@ -192,7 +200,7 @@
 26.	How much total width will the div block below take up? *234px*
 
   ```
-  body {
+  div {
     width: 200px;
     border-weight: 2px;
     padding: 0px, 10px, 0px, 20px;
